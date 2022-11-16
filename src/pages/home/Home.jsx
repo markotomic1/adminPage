@@ -1,3 +1,4 @@
+import Table from "../../components/table/Table";
 import Chart from "../../components/chart/Chart";
 import FeaturedChart from "../../components/featuredChart/FeaturedChart";
 import Navbar from "../../components/navbar/Navbar";
@@ -19,7 +20,11 @@ const Home = () => {
         </div>
         <div className='charts'>
           <FeaturedChart />
-          <Chart />
+          <Chart aspect={2 / 1} title='Last 6 months (revenue)' />
+        </div>
+        <div className='listContainer'>
+          <div className='listTitle'>Latest Transactions</div>
+          <Table />
         </div>
       </div>
     </div>
